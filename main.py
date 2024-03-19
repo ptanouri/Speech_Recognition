@@ -36,3 +36,5 @@ print(transcript.text)
 
 with open('Output_Transcript.txt', 'w') as f:
     f.write(transcript.text)
+    
+print('g3')
