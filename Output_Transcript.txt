@@ -1,1 +1,1 @@
-Hello. One, two, three, testing.
+Hello. This is a test for speech recognition. One, two, three, testing.

@@ -35,8 +35,8 @@ config = aai.TranscriptionConfig(sentiment_analysis=True)
 
 transcript = aai.Transcriber().transcribe(FILE_URL, config) 
 
-# for sentiment_result in transcript.sentiment_analysis:
-#     print(sentiment_result.text)
-#     print(sentiment_result.sentiment)  # POSITIVE, NEUTRAL, or NEGATIVE
-#     print(sentiment_result.confidence)
-#     print(f"Timestamp: {sentiment_result.start} - {sentiment_result.end}")
+for sentiment_result in transcript.sentiment_analysis:
+    print(sentiment_result.text)
+    print(sentiment_result.sentiment)  # POSITIVE, NEUTRAL, or NEGATIVE
+    print(sentiment_result.confidence)
+    print(f"Timestamp: {sentiment_result.start} - {sentiment_result.end}")
